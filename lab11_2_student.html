@@ -5,14 +5,14 @@
     <title>Завдання 2 - (Смольський Юрій ПП-26 )</title>
     <style>
         body { font-family: sans-serif; padding: 20px; }
-        .result { font-weight: bold; color: #005a9c; }
+        .result { font-weight: bold; color: #0b7c34; }
     </style>
 </head>
 <body>
     <h1>Завдання 2: Обчислення арифметичних виразів</h1>
 
     <script>
-        // Запитуємо вихідні дані
+        // вихідні дані
         let priceStr = prompt("Введіть ціну за одиницю товару (грн):", "25.50");
         let quantityStr = prompt("Введіть кількість одиниць товару:", "5");
         let cashStr = prompt("Введіть суму готівки, яку дав клієнт:", "200");
@@ -22,11 +22,11 @@
         let quantity = parseInt(quantityStr);
         let cash = parseFloat(cashStr);
 
-        // Власні арифметичні вирази
+        // арифметичні вирази
         let totalCost = price * quantity; // Множення
         let change = cash - totalCost;    // Віднімання
 
-        // Виводимо результат на сторінку
+        // Виводимо результат
         document.write("<h2>Касовий чек:</h2>");
         document.write("<p>Ціна за одиницю: " + price.toFixed(2) + " грн</p>");
         document.write("<p>Кількість: " + quantity + " шт.</p>");
