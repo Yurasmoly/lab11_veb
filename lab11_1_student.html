@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 1 - (Смольський Юрій ПП-26)</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Завдання 1: Робота з діалоговими вікнами</h1>
+    <p>Скрипт виконав свою роботу. Результат був у діалогових вікнах.</p>
+
+    <script>
+        // 1. Введення даних (prompt)
+        let userName = prompt("Як вас звати?", "Студент");
+
+        // 2. Підтвердження (confirm)
+        let isReady = confirm("Вітаємо, " + userName + "! Ви готові почати лабораторну?");
+
+        // 3. Виведення повідомлення (alert)
+        if (isReady) {
+            alert("Чудово, " + userName + "! Починаємо.");
+        } else {
+            alert("Шкода. Повертайтеся, коли будете готові.");
+        }
+    </script>
+</body>
+</html>

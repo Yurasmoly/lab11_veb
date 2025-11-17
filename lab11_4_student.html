@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 4 - (Смольський Юрій ПП-26)</title>
+    <style>
+        body { 
+            font-family: 'Times New Roman', serif; 
+            margin: 0;
+            padding: 0;
+        }
+        .title-page {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .header {
+            font-size: 16px;
+            text-align: center;
+        }
+        .lab-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        .student-info {
+            font-size: 18px;
+            margin-top: 40px;
+            text-align: right;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Запитуємо дані
+        let university = prompt("Введіть назву ЗВО:", "Львівська Політехніка");
+        let department = prompt("Введіть назву кафедри:", "Кафедра Комп'ютерних Наук");
+        let labName = prompt("Введіть назву лабораторної:", "Лабораторна робота №1");
+        let subject = prompt("Введіть назву дисципліни:", "Веб-технології");
+        let studentName = prompt("Введіть ваше ПІБ:", "Смольський... ");
+        let studentGroup = prompt("Введіть вашу групу:", "ПП-26");
+
+        // Формуємо сторінку
+        document.write('<div class="title-page">');
+        
+        document.write('<div class="header">');
+        document.write('<p>Міністерство освіти і науки України</p>');
+        document.write('<p>Національний університет "' + university + '"</p>');
+        document.write('<p>' + department + '</p>');
+        document.write('</div>');
+
+        document.write('<div class="lab-title">');
+        document.write('<p>' + labName + '</p>');
+        document.write('<p>з дисципліни "' + subject + '"</p>');
+        document.write('</div>');
+
+        document.write('<div class="student-info">');
+        document.write('<p>Виконав:</p>');
+        document.write('<p>студент групи ' + studentGroup + '</p>');
+        document.write('<p>' + studentName + '</p>');
+        document.write('</div>');
+
+        document.write('</div>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3 - (Смольський Юрій ПП-26 )</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .formula { font-family: monospace; background: #f4f4f4; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Завдання 3: Обчислення з об'єктом Math</h1>
+
+    <script>
+        // 1. Обчислення гіпотенузи (c = sqrt(a^2 + b^2))
+        let a = parseFloat(prompt("Введіть довжину катета A:", "3"));
+        let b = parseFloat(prompt("Введіть довжину катета B:", "4"));
+
+        // Використовуємо Math.pow() (ступінь) та Math.sqrt() (квадратний корінь)
+        let hypotenuse = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        
+        // 2. Обчислення синуса кута
+        let angleDeg = parseFloat(prompt("Введіть кут у градусах:", "45"));
+        // Переводимо градуси в радіани для Math.sin()
+        let angleRad = angleDeg * (Math.PI / 180);
+        let sineValue = Math.sin(angleRad);
+
+        // Виведення результатів
+        document.write("<h2>Теорема Піфагора:</h2>");
+        document.write("<p>Катет A: " + a + "</p>");
+        document.write("<p>Катет B: " + b + "</p>");
+        document.write("<p>Формула: <span class='formula'>c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))</span></p>");
+        document.write("<p><b>Гіпотенуза C: " + hypotenuse + "</b></p>");
+
+        document.write("<h2>Тригонометрія:</h2>");
+        document.write("<p>Кут: " + angleDeg + " градусів</p>");
+        document.write("<p>Формула: <span class='formula'>sin(x) = Math.sin(angleRad)</span></p>");
+        document.write("<p><b>Синус кута: " + sineValue.toFixed(4) + "</b></p>");
+    </script>
+</body>
+</html>
